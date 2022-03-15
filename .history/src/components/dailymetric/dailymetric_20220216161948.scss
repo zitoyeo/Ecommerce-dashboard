@@ -1,0 +1,5 @@
+@use '../scss/abstracts/' as *;
+
+.top__card {
+    @include minicard
+}

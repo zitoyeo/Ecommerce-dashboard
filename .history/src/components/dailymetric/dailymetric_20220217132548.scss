@@ -1,0 +1,17 @@
+@use '../../scss/abstracts/' as *;
+
+.top__card {
+
+    width: 100%;
+    @include minicard
+}
+
+.top__card1 {
+
+    @include tablet {
+        padding-left: 0;
+        width: 100vw;
+    }
+    @include minicard;
+}
+

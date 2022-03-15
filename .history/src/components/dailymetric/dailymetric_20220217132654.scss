@@ -1,0 +1,20 @@
+@use '../../scss/abstracts/' as *;
+
+.top__card {
+
+    width: 100%;
+    @include minicard
+}
+
+.top__card1 {
+
+    @include tablet {
+        padding: $mobileSpacing;
+        position: relative;
+        background-color: $bodyBg;
+        z-index: 100;
+        width: 100%
+    }
+    @include minicard;
+}
+

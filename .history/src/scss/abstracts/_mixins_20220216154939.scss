@@ -1,0 +1,71 @@
+@use './variables' as *;
+
+@mixin flex($alignItem: center, $justifyContent: center) {
+    display: flex;
+    align-items: $alignItem;
+    justify-content: $justifyContent;
+}
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin getCardStyles {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: 1s ease-in-out;
+    &:hover {
+      transform: translateX(4px);
+      transform: translateY(-4px);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 25px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    
+  }
+    
+} 
+
+
+@mixin getNavbarStyles {
+    .navbar {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .avatar {
+          img {
+            border-radius: 3rem;
+            height: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  @mixin minicard {
+
+  padding: 20px 30px;
+  border-radius: $borderRadius;
+  background-color: $mainBg;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 5s ease-in-out;
+    &:hover {
+      transform: translateX(4px);
+      transform: translateY(-4px);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 25px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    
+  }
+}

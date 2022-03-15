@@ -1,0 +1,11 @@
+@use '../../scss/abstracts/' as *;
+@use 'sass:math';
+
+.topnav  {
+    @include flex(center, space-between);
+    margin-bottom: $spacing;
+
+    @include tablet {
+        margin-bottom : $mobileSpacing;
+    }
+}

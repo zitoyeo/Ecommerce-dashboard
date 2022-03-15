@@ -1,0 +1,45 @@
+@use '../../scss/abstracts/' as *;
+
+.trending__users {
+
+    @include minicard;
+    color: black;
+    border: 3px solid navy;
+    margin: 1.1rem 15rem ;
+    @include tablet {
+        width: 130%;
+        margin:1rem 1.5rem;
+        justify-content: center;
+        position: relative;
+        z-index: 100;
+        align-items: center;
+     
+    }
+        .icon {
+            margin : 0.4rem
+        }
+    .trending__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        @include getCardIconStyle;
+
+    }
+    .trend {
+        display: flex;
+        margin-bottom: 1rem;
+        gap: 1rem;
+        img {
+            border-radius: 2rem;
+            height: 2.5rem;
+        }
+
+    
+
+        
+    }
+
+
+
+}
+

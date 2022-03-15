@@ -1,0 +1,6 @@
+@use '../../scss/abstracts/' as *;
+
+.trending__tracks {
+    justify-content: center
+    @include minicard;
+}

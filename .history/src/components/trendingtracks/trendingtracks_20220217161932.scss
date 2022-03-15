@@ -1,0 +1,18 @@
+@use '../../scss/abstracts/' as *;
+
+@mixin getTrendingTracksStyles {
+    @include minicard
+    .trending__tracks {
+      @include getCardStyles;
+      .trending__info {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include getCardIconStyle
+      }
+      .trend {
+          display: flex;
+      }
+    }
+}

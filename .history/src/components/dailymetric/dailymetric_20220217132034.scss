@@ -1,0 +1,13 @@
+@use '../../scss/abstracts/' as *;
+
+.top__card {
+
+    width: 90%;
+    @include minicard
+}
+
+.top__card1 {
+    width: 100%;
+    @include minicard
+}
+

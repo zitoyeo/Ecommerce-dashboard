@@ -1,0 +1,13 @@
+@use '../../scss/abstracts/' as *;
+
+.top__card {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    @include minicard
+}
+
+.top__card1 {
+    width: 50;
+    @include minicard
+}

@@ -1,0 +1,14 @@
+@use '../../scss/abstracts/' as *;
+
+.summary-box {
+    @include flex(strtch, flex-start);
+
+    &__chart {
+        width: 40%;
+
+        &__value {
+            margin-top: -30%;
+            font-weight: 700;
+        }
+    }
+}

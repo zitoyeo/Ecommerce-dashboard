@@ -1,0 +1,5 @@
+@use './variables' as *;
+
+.top__card {
+    @include getCardStyles;
+  }

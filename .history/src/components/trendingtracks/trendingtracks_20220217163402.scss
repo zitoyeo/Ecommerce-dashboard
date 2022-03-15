@@ -1,0 +1,21 @@
+@use '../../scss/abstracts/' as *;
+
+@mixin getTrendingTracksStyles {
+    .trending__tracks {
+      @include getCardStyles;
+      .trending__info {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 100px;
+        @include getCardIconStyle
+      }
+      .trend {
+          display: flex;
+          flex-direction: column;
+      }
+      
+    }
+ 
+}

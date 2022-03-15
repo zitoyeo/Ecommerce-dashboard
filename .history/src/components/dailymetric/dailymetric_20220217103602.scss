@@ -1,0 +1,9 @@
+@use '../../scss/abstracts/' as *;
+
+.top__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    @include minicard
+}

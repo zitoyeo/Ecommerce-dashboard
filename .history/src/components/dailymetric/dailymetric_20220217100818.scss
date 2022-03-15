@@ -1,0 +1,7 @@
+@use '../../scss/abstracts/' as *;
+
+.top__card {
+    display: inline-block;
+    width: 70%;
+    @include minicard
+}

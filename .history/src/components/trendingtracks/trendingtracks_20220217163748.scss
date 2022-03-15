@@ -1,0 +1,9 @@
+@use '../../scss/abstracts/' as *;
+
+.trending__tracks {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    @include minicard;
+}

@@ -1,0 +1,20 @@
+@use '../../scss/abstracts/' as *;
+
+.trending__users {
+    @include getCardStyles;
+    .trending__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        @include getCardIconStyle;
+
+    }
+    .trend {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+
+
+}
+

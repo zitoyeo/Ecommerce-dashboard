@@ -1,0 +1,54 @@
+@use '../../scss/abstracts/' as *;
+
+.top__card {
+    border: 3px solid navy;
+    width: 100%;
+    color: black;
+    @include tablet {
+        margin-top: 0.5rem;
+        padding: $mobileSpacing;
+        position: relative;
+        width: 100%;
+    }
+    @include minicard
+}
+
+.top__card1 {
+
+    color: black;
+    border: 3px solid navy;
+    width: 33%;
+    @include tablet {
+        margin-top: 0.5rem;
+   
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+ 
+    @include minicard;
+}
+
+.top__card2 {
+    @include minicard;
+    width: 22.8%;
+    height: 340px;
+    border: 3px solid navy;
+    color: black;
+    margin : 1rem 0 0 1rem;
+    @include tablet {
+        margin: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+ 
+}
+
+
